@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(
+    115.4deg,
+    #ff5ef5 7.46%,
+    #12d8fa 52.88%,
+    #a6ffcb 98.31%
+  );
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  font-family: "Pangolin", cursive;
+  padding: 30px 0px 0px 30px;
+  text-overflow: wrap;
+  font-size: 30px;
+  text-align: left;
+}
+
+.subtitle-text {
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 10px;
+  text-align: left;
+  padding: 30px 0px 10px 30px;
+  font-size: 16px;
+  text-overflow: wrap;
+}
+
+@media (max-width: 576px) {
+  .intro-photo {
+    border-radius: 10px;
+  }
+}
+
+#writing-input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    font-size: 14px;
+    font-family: "Merriweather Sans", sans-serif;
+    padding: 10px;
+    text-align: left;
+    text-overflow: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem rgb(118, 121, 119));
+}
+
+.output-text-section {
+    width: 90%;
+    height: fit-content;
+    border: none;
+    font-size: 14px;
+    font-family: "Merriweather Sans", sans-serif;
+    padding: 10px;
+    text-align: left;
+    text-overflow: wrap;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem rgb(118, 121, 119));
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.copy-btn{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.output-label {
+    font-size: 20px;
+    font-family: "Pangolin", cursive;
+    text-align: left;
+    text-overflow: wrap;
+    padding: 30px 0px 0px 30px;
+    margin-top: 10px;
+}
