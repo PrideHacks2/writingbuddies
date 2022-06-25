@@ -59,7 +59,7 @@
                 </div>
             </div>
         </nav>
-        <h1 id="header">Competitive Writing</h1>
+        <h1 id="header">Collaborative Writing</h1>
         <div id="body-content">
             <div id="gameContainer" style="display: none">
               <textarea id="textInput" placeholder="Type here!" cols="50" rows="25" autofocus></textarea>
@@ -72,7 +72,7 @@
               </div>
             </div>
             <div class="rightContainer" id="finishGame" style="display: none">
-              <button class="button" id="reset">Reset</button>
+              <!-- <button class="button" id="reset">Reset</button> -->
               <button class="button" onclick="location.href = '../ARPrizeViewing/ARPrize.html'">View your prize!</button>
             </div>
         </div>
@@ -86,6 +86,7 @@
                     </div>
                     <form id="form">
                       <div class="modal-body">
+                        <p>Only when both you and your friend have reached your goals, then the monster will be beaten.</p>
                         <div class="form-group">
                           <label for="goal" class="col-form-label">Goal:</label>
                           <input type="number" class="form-control" id="goal" inputmode="numeric" step="1" required>
@@ -94,6 +95,29 @@
                     </form>
                     <div class="modal-footer">
                       <button id="done" type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="roomModal" >
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Join/Create room</h4>
+                    </div>
+                    <form id="form">
+                      <div class="modal-body">
+                        <p>Only when both you and your friend have reached your goals, then the monster will be beaten.</p>
+                        <div class="form-group">
+                            <label for="roomName" class="col-form-label">Room Name:</label>
+                            <input type="text" class="form-control" id="roomName" inputmode="numeric" required>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="modal-footer">
+                      <button id="join" type="button" class="btn btn-secondary" data-dismiss="modal">Join Game</button>
+                      <button id="create" type="button" class="btn btn-secondary" data-dismiss="modal">Create Game</button>
                     </div>
                 </div>
             </div>
@@ -114,6 +138,6 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"
         ></script>
-        <script src="SoloTypingGame.js"></script>
+        <script src="MultiTypingGame.js"></script>
     </body>
 </html>
