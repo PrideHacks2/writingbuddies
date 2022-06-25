@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     clearButton.addEventListener("click", function () {
         form.reset();
+        location.reload();
     });
 
     form.addEventListener("submit", function (e) {
