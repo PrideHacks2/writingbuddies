@@ -6,19 +6,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const showWordCount = document.getElementById("showWordCount");
     const monster = document.getElementById("monster");
     const hp = document.getElementById("hp");
+    const finishGame = document.getElementById("finishGame");
+    const resetBtn = document.getElementById("reset");
     let monsterIsDead = false;
 
-    if (localStorage.getItem("goal") !== null) {
+    if (localStorage.getItem("goal") !== null && localStorage.getItem("goal") !== "") {
         monster.style.display = "flex";
+        finishGame.style.display = "none";
         $('#goalModal').modal('hide');
     } else {
         $('#goalModal').modal('show');
     }
 
     doneBtn.addEventListener("click", function (e) {
-        console.log("submit");
         e.preventDefault();
-        console.log(form.goal.value);
         localStorage.setItem("goal", form.goal.value);
         window.location.reload();
     }); 
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     textInput.addEventListener("input", function(){
         let input = countWord( this.value );
         showWordCount.innerHTML = (
-            "<br>Words: "+ input.words
+            "<br>Words: "+ input.words + " out of " + localStorage.getItem("goal")
         ); 
 
         hp.style.width = 100 - Math.floor(input.words*100/localStorage.getItem("goal")) + "%";
@@ -46,10 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (monsterIsDead === true) {
             monster.style.display = "none";
+            finishGame.style.display = "flex";
         }
 
         return {
             words : wom ? wom.length : 0
         };
     }
+
+    resetBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        localStorage.removeItem("goal");
+        window.location.reload();
+    })
 });
