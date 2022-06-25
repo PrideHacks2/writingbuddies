@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="../assets/images/Logo.png" />
+    <link rel="stylesheet" href="./FillerParagraph.css" />
+    <title>Writing Buddies</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html">
+        <img
+          src="../assets/images/Logo.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Writing Buddies
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="../index.html">Home</a>
+          <a class="nav-item nav-link active" href="#">AI Writing</a>
+          <a class="nav-item nav-link" href="../TLDRSummarizer/SummariseArticles.html">Summarise articles</a>
+          <a class="nav-item nav-link" href="#">Typing Game</a>
+          <a class="nav-item nav-link" href="#">FAQ</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-area">
+      <h1 class="title-text">Filler Paragraph generator</h1>
+
+      <p class="subtitle-text">
+        Follow the formatting and input 3 examples of your sample writing, then
+        fill in the main gist of your paragraph and click generate! Use this
+        tool to help generate filler paragraphs so you can carry on with your
+        story.
+      </p>
+      <div class="input-section">
+        <!-- <h2 class="input-title">Input</h2>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Example 1</span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your sample writing"
+              id="example1"
+            />
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Example 2</span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your sample writing"
+              id="example2"
+            />
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Example 3</span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your sample writing"
+              id="example3"
+            />
+          </div> -->
+        <div class="center">
+          <textarea id="writing-input" nae="writing-input" rows="12">
+--
+Content summary: Little red riding hood skips through the woods to her grandma’s house
+Genre: Fantasy
+Tone: Cheerful
+Keywords: Woods, Travelling
+Paragraph: Once upon a time, there was a girl called red riding hood. She was on her way to her grandmother’s house to deliver some freshly baked cookies to her grandmother. The woods were bright and cheerful as she skipped through them with glee.
+--
+Content summary: Little red riding hood gets eaten by the big bad wolf
+Genre: Fantasy
+Tone: Horror
+Keywords: Eaten, Wolf
+Paragraph:  Little red riding hood gasped in horror as  her grandmother removed her glasses to reveal that she had been speaking to the wolf all along! The wolf opened it's jaw wide and in a single bite, Little red riding hood was gone.
+--
+Content summary: Little red riding hood meets her grandmother but notices something is off
+Genre: Fantasy
+Tone: Mystery
+Keywords: Suspicious
+Paragraph: 
+          </textarea>
+        </div>
+
+        <div class="generate-btn-section">
+          <button type="button" class="btn btn-dark" onclick="generateParagraph()">Generate</button>
+        </div>
+        
+        <p class="output-label">Output</p>
+
+        <div class="center output-section">
+          <div class="output-text-section">
+            <p id="output-text">
+              Little red riding hood surprised to see that her grandmother had
+              grown much since she had last visited. Grandma also had an
+              alarming appetite.
+            </p>
+            <i class="fa-solid fa-copy copy-btn" onclick="copyOutput()"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class=" "></div>
+    </div>
+    <script src="./FillerParagraph.js"></script>
+  </body>
+</html>
