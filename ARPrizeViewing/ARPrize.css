@@ -1,0 +1,76 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(
+    115.4deg,
+    #ff5ef5 7.46%,
+    #12d8fa 52.88%,
+    #a6ffcb 98.31%
+  );
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  font-family: "Pangolin", cursive;
+  padding: 30px 3px 0px 30px;
+  text-overflow: wrap;
+  font-size: 30px;
+  text-align: left;
+}
+
+.subtitle-text {
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 10px;
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+  font-size: 16px;
+  text-overflow: wrap;
+}
+
+
+
+@media (max-width: 576px) {
+ 
+}
+
+
+
+.center-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.row-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-around;
+  width: fit-content;
+  
+}
+
+#qr-code-img {
+  width: 50%;
+  height: calc(width);
+  border-radius: 10px;
+  margin: 20px 0px 0px 0px;
+}
+
+#target-img {
+  margin: 50px;
+  width: 50%;
+  height: calc(width);
+}

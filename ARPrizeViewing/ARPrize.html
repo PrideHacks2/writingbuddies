@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Pangolin&display=swap"
       rel="stylesheet"
     />
     <link
@@ -41,15 +41,24 @@
       rel="stylesheet"
     />
 
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="icon" href="../assets/images/Logo.png" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./ARPrize.css" />
     <title>Writing Buddies</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="../index.html">
         <img
-          src="./assets/images/Logo.png"
+          src="../assets/images/Logo.png"
           width="30"
           height="30"
           class="d-inline-block align-top"
@@ -70,52 +79,36 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#"
-            >Home <span class="sr-only">(current)</span></a
+          <a class="nav-item nav-link" href="../index.html">Home</a>
+          <a
+            class="nav-item nav-link"
+            href="../ContentGeneration/FillerParagraph.html"
+            >AI Writing</a
           >
-          <a class="nav-item nav-link" href="./ContentGeneration/FillerParagraph.html">AI Writing</a>
-          <a class="nav-item nav-link" href="./TLDRSummarizer/SummariseArticles.html">Summarise articles</a>
-          <a class="nav-item nav-link" href="#">Typing Game</a>
-          <a class="nav-item nav-link" href="/FAQ/faq.html">FAQ</a>
+          <a class="nav-item nav-link" href="#">Summarise articles</a>
+          <a class="nav-item nav-link active" href="#">Typing Game</a>
+          <a class="nav-item nav-link" href="#">FAQ</a>
         </div>
       </div>
     </nav>
 
-    <div class="cover-section center">
-      <h1 class="title-text">Writing Buddies</h1>
-
-      <p class="subtitle-text">
-        Never get stuck on another writers block with writing buddies!
-      </p>
-
-      <div class="button-section">
-        <a href="./ContentGeneration/FillerParagraph.html" class="starter-buttons btn btn-light"
-          >AI Writing Assistant</a
-        >
-        <a href="./TLDRSummarizer/SummariseArticles.html" class="starter-buttons btn btn-light">Summarise articles</a>
+    <div class="center">
+      <div class="row-align">
+        <div class="center-align">
+          <h1 class="title-text">Good Job you reached your goal!</h1>
+  
+          <p class="subtitle-text">
+            Scan the QR code to access the AR camera! <br />
+            Then point your camera on the image shown on the right to see secret AR reward!
+          </p>
+  
+          <img id="qr-code-img" src="../assets/images/qr-code.gif" alt="" />
+          
+        </div>
+        <img id="target-img" src="../assets/images/ARtarget.png" alt="" />
       </div>
 
-      <div class="button-section">
-        <a href="#" class="starter-buttons btn btn-light"
-          >Competitive Typing Game</a
-        >
-
-        <a href="#" class="starter-buttons btn btn-light">Writers’ FAQ</a>
-      </div>
-    </div>
-
-    <div class="center intro-section ">
-      <img class="intro-photo" src="../assets/images/Typing.png" alt="">
-      <div class="intro-text">
-        <p>
-          Writing buddy utilizes the power of NLP to help you fill in the gaps in
-          your story.
-        </p>
-        <p>
-          We also encourage writers to support one another an cheer each other on
-          with the use of competitive writing tool!
-        </p>
-      </div>
+        
     </div>
   </body>
 </html>
