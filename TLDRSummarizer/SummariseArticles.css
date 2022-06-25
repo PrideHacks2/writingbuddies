@@ -82,19 +82,18 @@ body {
 }
 
 .copy-btn{
-  cursor: pointer;
-  font-size: 20px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .output-label {
-  font-size: 20px;
-  font-family: "Pangolin", cursive;
-  text-align: left;
-  text-overflow: wrap;
-  padding: 0px 0px 0px 30px;
-  margin-top: 10px;
+    font-size: 20px;
+    font-family: "Pangolin", cursive;
+    text-align: left;
+    text-overflow: wrap;
+    padding: 0px 0px 0px 30px;
+    margin-top: 10px;
 }
-
 
 .generate-btn-section {
   padding: 20px 5% 0px 0px;

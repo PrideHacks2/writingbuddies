@@ -42,10 +42,16 @@
     />
 
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="icon" href="../assets/images/Logo.png" />
-    <link rel="stylesheet" href="./FillerParagraph.css" />
+    <link rel="stylesheet" href="./SummariseArticles.css" />
     <title>Writing Buddies</title>
   </head>
   <body>
@@ -74,8 +80,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="../index.html">Home</a>
-          <a class="nav-item nav-link active" href="#">AI Writing</a>
-          <a class="nav-item nav-link" href="../TLDRSummarizer/SummariseArticles.html">Summarise articles</a>
+          <a class="nav-item nav-link" href="../ContentGeneration/FillerParagraph.html">AI Writing</a>
+          <a class="nav-item nav-link active" href="#">Summarise articles</a>
           <a class="nav-item nav-link" href="#">Typing Game</a>
           <a class="nav-item nav-link" href="#">FAQ</a>
         </div>
@@ -83,13 +89,11 @@
     </nav>
 
     <div class="main-area">
-      <h1 class="title-text">Filler Paragraph generator</h1>
+      <h1 class="title-text">TLDR for writers</h1>
 
       <p class="subtitle-text">
-        Follow the formatting and input 3 examples of your sample writing, then
-        fill in the main gist of your paragraph and click generate! Use this
-        tool to help generate filler paragraphs so you can carry on with your
-        story.
+        Researching something for your story but no time to read the whole text?
+        Paste the paragraph in here and get a quick summary!
       </p>
       <div class="input-section">
         <!-- <h2 class="input-title">Input</h2>
@@ -128,39 +132,24 @@
           </div> -->
         <div class="center">
           <textarea id="writing-input" nae="writing-input" rows="12">
---
-Content summary: Little red riding hood skips through the woods to her grandma’s house
-Genre: Fantasy
-Tone: Cheerful
-Keywords: Woods, Travelling
-Paragraph: Once upon a time, there was a girl called red riding hood. She was on her way to her grandmother’s house to deliver some freshly baked cookies to her grandmother. The woods were bright and cheerful as she skipped through them with glee.
---
-Content summary: Little red riding hood gets eaten by the big bad wolf
-Genre: Fantasy
-Tone: Horror
-Keywords: Eaten, Wolf
-Paragraph:  Little red riding hood gasped in horror as  her grandmother removed her glasses to reveal that she had been speaking to the wolf all along! The wolf opened it's jaw wide and in a single bite, Little red riding hood was gone.
---
-Content summary: Little red riding hood meets her grandmother but notices something is off
-Genre: Fantasy
-Tone: Mystery
-Keywords: Suspicious
-Paragraph: 
+What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </textarea>
         </div>
 
         <div class="generate-btn-section">
           <button type="button" class="btn btn-dark" onclick="generateParagraph()">Generate</button>
         </div>
-        
         <p class="output-label">Output</p>
 
         <div class="center output-section">
           <div class="output-text-section">
             <p id="output-text">
-              Little red riding hood surprised to see that her grandmother had
-              grown much since she had last visited. Grandma also had an
-              alarming appetite.
+              Lorem Ipsum dates back to the 1500s, when an unknown printer
+              scrambled galley of type. It was popularised in the 1960s with the
+              release of Letraset sheets containing dummy text. More recently,
+              it has been included in desktop publishing software like Aldus
+              PageMaker.
             </p>
             <i class="fa-solid fa-copy copy-btn" onclick="copyOutput()"></i>
           </div>
@@ -169,6 +158,6 @@ Paragraph:
 
       <div class=" "></div>
     </div>
-    <script src="./FillerParagraph.js"></script>
+    <script src="./SummariseArticles.js"></script>
   </body>
 </html>
