@@ -1,20 +1,28 @@
 .body {
     position: relative;
-    width: 1440px;
-    height: 1024px;
+    width: 100vw;
     background: linear-gradient(115.4deg,#ff5ef5 7.46%,#12d8fa 52.88%,#a6ffcb 98.31%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
     font-family: 'Merriweather Sans', sans-serif;
     padding: 0% 10%;
 }
 
-h1 {
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-
 #searchbar {
     border-radius: 20px;
-    height: 5%;
-    width: 95%;
+    height: 5vh;
+    width: 75vw;
     background-color: rgba(255, 255, 255, 0.75);
+    border: none;
+    display: flex;
+}
+
+#searchinput, #searchbutton {
+    padding-left: 2vw;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+h1 {
+    padding: 1vw 0vw;
 }
