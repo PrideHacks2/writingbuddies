@@ -10,6 +10,9 @@ body {
     #12d8fa 52.88%,
     #a6ffcb 98.31%
   );
+
+  background-repeat:no-repeat;
+  background-attachment: fixed;
 }
 
 
