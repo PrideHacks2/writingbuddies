@@ -23,11 +23,12 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
-    ></script>
+    />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,7 +56,7 @@
     <title>Writing Buddies</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <a class="navbar-brand" href="../index.html">
         <img
           src="../assets/images/Logo.png"
@@ -80,7 +81,11 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="../index.html">Home</a>
-          <a class="nav-item nav-link" href="../ContentGeneration/FillerParagraph.html">AI Writing</a>
+          <a
+            class="nav-item nav-link"
+            href="../ContentGeneration/FillerParagraph.html"
+            >AI Writing</a
+          >
           <a class="nav-item nav-link active" href="#">Summarise articles</a>
           <a class="nav-item nav-link" href="#">Typing Game</a>
           <a class="nav-item nav-link" href="../FAQ/faq.html">FAQ</a>
@@ -93,7 +98,8 @@
 
       <p class="subtitle-text">
         Researching something for your story but no time to read the whole text?
-        Paste the paragraph in here and get a quick summary!
+        Paste the paragraph in here beside the "Passage:" marker and get a quick
+        summary!
       </p>
       <div class="input-section">
         <!-- <h2 class="input-title">Input</h2>
@@ -132,13 +138,33 @@
           </div> -->
         <div class="center">
           <textarea id="writing-input" nae="writing-input" rows="12">
-What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Passage: Is Wordle getting tougher to solve? Players seem to be convinced that the game has gotten harder in recent weeks ever since The New York Times bought it from developer Josh Wardle in late January. The Times has come forward and shared that this likely isn’t the case. That said, the NYT did mess with the back end code a bit, removing some offensive and sexual language, as well as some obscure words There is a viral thread claiming that a confirmation bias was at play. One Twitter user went so far as to claim the game has gone to “the dusty section of the dictionary” to find its latest words.
+
+TLDR: Wordle has not gotten more difficult to solve.
+--
+Passage: ArtificialIvan, a seven-year-old, London-based payment and expense management software company, has raised $190 million in Series C funding led by ARG Global, with participation from D9 Capital Group and Boulder Capital. Earlier backers also joined the round, including Hilton Group, Roxanne Capital, Paved Roads Ventures, Brook Partners, and Plato Capital.
+
+TLDR: ArtificialIvan has raised $190 million in Series C funding.
+--
+Passage:
+
+TLDR: 
           </textarea>
         </div>
 
         <div class="generate-btn-section">
-          <button type="button" class="btn btn-dark" onclick="generateParagraph()">Generate</button>
+          <div
+              id="loading-spinner"
+              class="spinner-border text-dark"
+              role="status"
+            ></div>
+          <button
+            type="button"
+            class="btn btn-dark"
+            onclick="generateSummary()"
+          >
+            Generate
+          </button>
         </div>
         <p class="output-label">Output</p>
 
@@ -151,7 +177,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
               it has been included in desktop publishing software like Aldus
               PageMaker.
             </p>
-            <i class="fa-solid fa-copy copy-btn" onclick="copyOutput()"></i>
+            <i class="fa-solid fa-copy copy-btn" onclick="copyOutput()" data-toggle="tooltip" data-placement="top" title="Copy to clipboard"></i>
+
           </div>
         </div>
       </div>

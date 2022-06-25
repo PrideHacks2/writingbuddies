@@ -102,3 +102,9 @@ body {
   align-items: left;
   justify-content: end;
 }
+
+#loading-spinner {
+  display: none;
+  margin-right: 5px;
+}
+
