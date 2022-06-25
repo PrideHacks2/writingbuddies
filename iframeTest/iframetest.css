@@ -1,0 +1,28 @@
+iframe{
+    border: 1px solid #000;
+    width: calc(90vw);
+    height: calc(90vh);
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(
+      115.4deg,
+      #ff5ef5 7.46%,
+      #12d8fa 52.88%,
+      #a6ffcb 98.31%
+    );
+  
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  }
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
