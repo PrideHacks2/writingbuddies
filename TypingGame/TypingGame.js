@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modal");
     const form = document.getElementById("form");
+    const doneBtn = document.getElementById("done");
     const gameContainer = document.getElementById("gameContainer");
     const textInput = document.getElementById("textInput");
     const showWordCount = document.getElementById("showWordCount");
@@ -8,17 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const hp = document.getElementById("hp");
     let monsterIsDead = false;
 
-    localStorage.setItem("goal", 123);
-
     if (localStorage.getItem("goal") !== null) {
-        modal.style.display = "none";
         monster.style.display = "flex";
+        $('#goalModal').modal('hide');
+    } else {
+        $('#goalModal').modal('show');
     }
 
-    form.addEventListener("submit", function (e) {
+    doneBtn.addEventListener("click", function (e) {
+        console.log("submit");
         e.preventDefault();
         console.log(form.goal.value);
         localStorage.setItem("goal", form.goal.value);
+        window.location.reload();
     }); 
 
     if (localStorage.getItem("goal") !== null) {

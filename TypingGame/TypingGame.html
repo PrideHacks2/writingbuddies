@@ -74,23 +74,24 @@
         </div>
           
         <!-- Modal content-->
-        <div id="modal" class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Set your goal</h5>
+        <div class="modal" id="goalModal">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Set your goal (in words)!</h4>
+                    </div>
+                    <form id="form">
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="goal" class="col-form-label">Goal:</label>
+                          <input type="number" class="form-control" id="goal" inputmode="numeric" step="1" required>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="modal-footer">
+                      <button id="done" type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+                    </div>
                 </div>
-                <form id="form">
-                <div class="modal-body">
-                  <div class="form-group">
-                    <label for="goal" class="col-form-label">Goal:</label>
-                    <input type="number" class="form-control" id="goal" inputmode="numeric" step="1" required>
-                  </div>
-                </div>
-
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-secondary" data-dismiss="modal-dialog">Done</button>
-                </div>
-              </form>
             </div>
         </div>
 
