@@ -1,17 +1,104 @@
 [
     {
         "id": 1,
+        "category": "Natural Language Processing",
         "question": "What is NLP?",
         "answer": "NLP stands for natural language processing."
     },
     {
         "id": 2,
+        "category": "Natural Language Processing",
         "question": "What is ML?",
         "answer": "ML stands for machine learning."
     },
     {
         "id": 3,
+        "category": "Natural Language Processing",
         "question": "What is AI?",
         "answer": "AI stands for artificial intelligence."
+    },
+    {
+        "id": 4,
+        "category": "Natural Language Processing",
+        "question": "What is text summarization?",
+        "answer": "Text summarization is the process of reducing the size of a text document to a certain number of sentences."
+    },
+    {
+        "id": 5,
+        "category": "Natural Language Processing",
+        "question": "Do I need to use my own samples to use the filler paragraph generation tool?",
+        "answer": "Not neccessarily. You can use the filler paragraph generation tool with the default training data."
+    },
+    {
+        "id": 6,
+        "category": "Natural Language Processing",
+        "question": "Can I use the filler paragraph generation tool without any samples?",
+        "answer": "No, the samples are used as training data to train the NLP model for text generation, otherwise the model would not know what to output."
+    },
+    {
+        "id": 7,
+        "category": "Natural Language Processing",
+        "question": "Can I use the text summarization tool without any samples?",
+        "answer": "No, the samples are used as training data to train the NLP model for text summarisation, otherwise the model would not know what to output."
+    },
+    {
+        "id": 8,
+        "category": "Typing Games",
+        "question": "What are the Typing Games?",
+        "answer": "The Typing Games are online tools to encourage you to stay focused and type out your story."
+    },
+    {
+        "id": 9,
+        "category": "Typing Games",
+        "question": "How does the solo typing game work?",
+        "answer": "In the solo typing game, you can set your own writing goals (i.e. how many words you want to write). To encourage you to reach your goal, you will be battling against a monster. Each word you type is an attack to the monster's HP. When you reach the end of the battle, you will be congratulated with a surprise!"
+    },
+    {
+        "id": 10,
+        "category": "Typing Games",
+        "question": "How fast must I type to play the Typing Games?",
+        "answer": "It is up to you! "
+    },
+    {
+        "id": 11,
+        "category": "Typing Games",
+        "question": "How do I play the Typing Games?",
+        "answer": "Check out the 'Typing Game' section of the homepage or in the navigation bar."
+    },
+    {
+        "id": 12,
+        "category": "Typing Games",
+        "question": "Can I play the Typing Games with my friends?",
+        "answer": "Yes, we have a multiplayer mode with a collaborative and competitive game mode available."
+    },
+    {
+        "id": 13,
+        "category": "Writing Tips",
+        "question": "How do I improve my writing skills?",
+        "answer": "Practice writing regularly and if possible get your friends to help review and feedback on your work. This can help you to improve your writing skills."
+    },
+    {
+        "id": 14,
+        "category": "Writing Tips",
+        "question": "How do I write a good story?",
+        "answer": "A good story is a story usually one that is written in a way that is easy to read and easy to understand. It is also a story that is written in a way that is easy to write and easy to read. However this is a subjective matter, so it is up to you to decide how good your story is."
+    },
+    {
+        "id": 15,
+        "category": "Writing Tips",
+        "question": "How do I improve my vocabulary?",
+        "answer": "Reading a variety of different books can expose you to new words and help you to improve your vocabulary."
+    },
+    {
+        "id": 16,
+        "category": "Writing Tips",
+        "question": "How do I come up with more ideas for my story?",
+        "answer": "Researching more about your topic and theme can help you with world building and story development, sometimes it can also inspire new paths your story can take."
+    },
+    {
+        "id": 17,
+        "category": "Writing Tips",
+        "question": "How long should a good story be?",
+        "answer": "If you're writing your first novel, the general rule of thumb for novel writing is a word count in the 80,000 to 100,000 range. While anything over 40,000 words can fall into the novel category, 50,000 is considered the minimum novel length. Anything over 110,000 words is considered too long for a fiction novel. <a href='https://www.masterclass.com/articles/word-count-guide' target='_blank'>Link</a>"
     }
 ]

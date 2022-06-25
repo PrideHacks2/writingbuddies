@@ -43,13 +43,16 @@
               </div>
             </div>
           </nav>
+        <h1 id="header">Writers' FAQ</h1>
         <div id="body-content">
-            <h1 id="header">Writers' FAQ</h1>
             <form id="searchbar" method="post"> 
-                <input id="searchinput" type="search" placeholder="Search.." name="search" style="width: 93%">
+                <input id="searchinput" type="search" placeholder="Search.." name="search" style="width: 90%" required>
+                <button type="button" id="clearbutton">X</button>
                 <button id="searchbutton" type="submit"><i class="fa fa-search"></i></button>
             </form> 
-            <div class="questions"></div>           
+            <div class="questions">
+            <div class="loader" id="loading-spinner"></div>
+            </div>           
         </div>
         <div id="questions"></div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
