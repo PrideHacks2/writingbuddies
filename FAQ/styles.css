@@ -26,6 +26,13 @@
     border: none;
 }
 
-h1 {
+#header {
     padding: 1vw 0vw;
+    font-family: 'Pangolin', cursive;
+}
+
+#question {
+    margin: 2vw 10vw;
+    padding: 4%;
+    border-radius: 20px;
 }

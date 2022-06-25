@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "question": "What is NLP?",
+        "answer": "NLP stands for natural language processing."
+    },
+    {
+        "id": 2,
+        "question": "What is ML?",
+        "answer": "ML stands for machine learning"
+    },
+    {
+        "id": 3,
+        "question": "What is AI?",
+        "answer": "AI stands for artificial intelligence."
+    }
+]
