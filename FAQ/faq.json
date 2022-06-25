@@ -1,17 +1,98 @@
 [
     {
         "id": 1,
+        "category": "Natural Language Processing",
         "question": "What is NLP?",
         "answer": "NLP stands for natural language processing."
     },
     {
         "id": 2,
+        "category": "Natural Language Processing",
         "question": "What is ML?",
         "answer": "ML stands for machine learning."
     },
     {
         "id": 3,
+        "category": "Natural Language Processing",
         "question": "What is AI?",
         "answer": "AI stands for artificial intelligence."
+    },
+    {
+        "id": 3,
+        "category": "Natural Language Processing",
+        "question": "What is text summarization?",
+        "answer": "Text summarization is the process of reducing the size of a text document to a certain number of sentences."
+    },
+    {
+        "id": 4,
+        "category": "Natural Language Processing",
+        "question": "Do I need to use my own samples to use the filler paragraph generation tool?",
+        "answer": "Not neccessarily. You can use the filler paragraph generation tool with the default training data."
+    },
+    {
+        "id": 5,
+        "category": "Natural Language Processing",
+        "question": "Can I use the filler paragraph generation tool without any samples?",
+        "answer": "No, the samples are used as training data to train the NLP model for text generation, otherwise the model would not know what to output."
+    },
+    {
+        "id": 6,
+        "category": "Natural Language Processing",
+        "question": "Can I use the text summarization tool without any samples?",
+        "answer": "No, the samples are used as training data to train the NLP model for text summarisation, otherwise the model would not know what to output."
+    },
+    {
+        "id": 7,
+        "category": "Typing Speed Games",
+        "question": "What are the Typing Speed Games?",
+        "answer": "The typing speed games are online tools to encourage you to stay focused and type out your story."
+    },
+    {
+        "id": 8,
+        "category": "Typing Speed Games",
+        "question": "How does the solo typing game work?",
+        "answer": "In the solo typing game, you will be running against the countdown, where each word you type helps to increase your progress meter. When you reach the end of the story, you will be congratulated with a surprise!"
+    },
+    {
+        "id": 9,
+        "category": "Typing Speed Games",
+        "question": "How fast must I type to play the typing speed games?",
+        "answer": "It is up to you! The minimum typing speed is adjustable in the settings."
+    },
+    {
+        "id": 10,
+        "category": "Typing Speed Games",
+        "question": "How do I play the typing speed games?",
+        "answer": "Check out the 'Typing Game' section of the homepage or in the navigation bar."
+    },
+    {
+        "id": 11,
+        "category": "Typing Speed Games",
+        "question": "Can I play the typing speed games with my friends?",
+        "answer": "Yes, we have a multiplayer mode with a colaborative and competitive game mode available."
+    },
+    {
+        "id": 12,
+        "category": "Writing Tips",
+        "question": "How do I improve my writing skills?",
+        "answer": "Practice writing regularly and if possible get your friends to help review and feedback on your work. This can help you to improve your writing skills."
+    },
+    {
+        "id": 13,
+        "category": "Writing Tips",
+        "question": "How do I write a good story?",
+        "answer": "A good story is a story usually one that is written in a way that is easy to read and easy to understand. It is also a story that is written in a way that is easy to write and easy to read. However this is a subjective matter, so it is up to you to decide how good your story is."
+    },
+    {
+        "id": 14,
+        "category": "Writing Tips",
+        "question": "How do I improve my vocabulary?",
+        "answer": "Reading a variety of different books can expose you to new words and help you to improve your vocabulary."
+    },
+    {
+        "id": 15,
+        "category": "Writing Tips",
+        "question": "How do I come up with more ideas for my story?",
+        "answer": "Researching more about your topic and theme can help you with world building and story development, sometimes it can also inspire new paths your story can take."
     }
 ]
