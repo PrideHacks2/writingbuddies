@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const questions = document.getElementById("questions");
     const form = document.getElementById("searchbar");
-    const submit = document.getElementById("searchbutton");
 
     fetch("faq.json")
         .then((response) => response.json())
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
     form.addEventListener("submit", function (e) {
-        console.log("submit");
         e.preventDefault();
         let query = document.getElementById("searchinput").value.toLowerCase();
         let questions = document.getElementById("questions");
