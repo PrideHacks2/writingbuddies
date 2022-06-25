@@ -59,27 +59,34 @@
                 </div>
             </div>
         </nav>
+        <h1 id="header">Competitive Writing</h1>
         <div id="body-content">
-            <h1 id="header">Competitive Writing</h1>
+            <div id="gameContainer" style="display: none">
+              <h3 id="header">Type here!</h3>
+              <textarea id="textInput" placeholder="Type here!" cols="50" rows="25" autofocus></textarea>
+              <p id="showWordCount">Words: 0</p>
+            </div>
+            
         </div>
-
           
         <!-- Modal content-->
-        <div class="modal-dialog" role="document">
+        <div id="modal" class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Set your goal</h5>
                 </div>
+                <form id="form">
                 <div class="modal-body">
                   <div class="form-group">
                     <label for="goal" class="col-form-label">Goal:</label>
-                    <input type="number" class="form-control" id="goal">
+                    <input type="number" class="form-control" id="goal" inputmode="numeric" step="1" required>
                   </div>
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+                  <button type="submit" class="btn btn-secondary" data-dismiss="modal-dialog">Done</button>
                 </div>
+              </form>
             </div>
         </div>
 
