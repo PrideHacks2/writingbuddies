@@ -1,0 +1,17 @@
+.body {
+    position: relative;
+    width: 100vw;
+    background: linear-gradient(115.4deg,#ff5ef5 7.46%,#12d8fa 52.88%,#a6ffcb 98.31%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#body-content {
+    padding: 0% 10%;
+}
+
+#header {
+    padding: 1vw 0vw;
+    font-family: 'Pangolin', cursive;
+}
