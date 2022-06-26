@@ -89,6 +89,12 @@
     }
 }
 
+@media (max-width: 800px) {
+    .clickable p {
+        display: none;
+    }
+}
+
 .clickable {
     margin: 0.5vw;
     cursor: pointer;
