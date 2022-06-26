@@ -73,4 +73,27 @@
         width: 80%;
         border-radius: 10px;
     }
+
+    .title-text {
+        font-size: 50px;
+    }
+
+    .clickable h3 {
+        font-size: 15px;
+        text-overflow: wrap;
+    }
+
+    p {
+        font-size: 12px;
+        text-overflow: wrap;
+    }
+}
+
+.clickable {
+    margin: 0.5vw;
+    cursor: pointer;
+}
+
+.clickable:hover {
+    background: rgba(255,255,255,0.85);
 }
