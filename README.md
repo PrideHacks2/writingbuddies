@@ -1,13 +1,8 @@
+## Attributions
+Images from Canva and Unsplash!
 
 
-
-# Attributions
-<!-- <a href='https://www.freepik.com/vectors/illustration-set'>Illustration set vector created by storyset - www.freepik.com</a> -->
-
-"Trophy" (https://skfb.ly/6U8rt) by JeremyW is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-
-
-# Node and sockets notes
+## Node and sockets notes
 * ok so how it works is first the client ping the server
 * the server adds the client to the room
 * the client then can send msgs to the room thats it
