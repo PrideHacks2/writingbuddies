@@ -10,18 +10,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const resetBtn = document.getElementById("reset");
     let monsterIsDead = false;
 
-    if (localStorage.getItem("goal") !== null && localStorage.getItem("goal") !== "") {
+    localStorage.clear()
+    $('#goalModal').modal('show');
+
+    function startgame() {
+        console.log("start game");
+        gameContainer.style.display = "flex";
         monster.style.display = "flex";
         finishGame.style.display = "none";
-        $('#goalModal').modal('hide');
-    } else {
-        $('#goalModal').modal('show');
+        $('#goalModal').modal('hide');        
+    }
+
+    function validateForm() {
+        let x = document.forms["form"]["goal"].value;
+        if (x == "") {
+            alert("Goal must be filled out");
+            $('#goalModal').modal('show');  
+        } else {
+            localStorage.setItem("goal", form.goal.value);
+            startgame();
+        }        
     }
 
     doneBtn.addEventListener("click", function (e) {
         e.preventDefault();
-        localStorage.setItem("goal", form.goal.value);
-        window.location.reload();
+        validateForm();
     }); 
 
     if (localStorage.getItem("goal") !== null) {
