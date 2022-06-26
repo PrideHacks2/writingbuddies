@@ -1,6 +1,6 @@
 ## Attributions
-Images from Canva and Unsplash!
-
+- Images from Canva and Unsplash!
+- monster gif from [here](https://i.pinimg.com/originals/7b/2e/fc/7b2efc47c7c9e21088a80e6a9bf62aec.gif)
 
 ## Node and sockets notes
 * ok so how it works is first the client ping the server
